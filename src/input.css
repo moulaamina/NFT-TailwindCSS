@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,900;1,800&display=swap');
+
+:root {
+  --theme-text-secondary: #fb2576;
+  --dark-blue: #000849;
+  --dark-purple: #571ce0;
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+    color: #ffffff;
+    background-image: url("/src/images/bg.png");
+}
+
+.theme-box-shadow {
+  box-shadow: 0 0 1.375rem rgba(0, 0, 0, 0.1);
+}
+
+
+.primary-btn-effect,
+.secondary-btn-effect{
+  transition: all 0.15s ease-in-out;
+}
+
+.primary-btn-effect:hover {
+  box-shadow: 0 0 10px 0 #571ce0 inset, 0 0 10px 2px #571ce0;
+}
+
+.secondary-btn-effect:hover{
+  box-shadow: 0 0 10px 0 #FB2576 inset, 0 0 10px 2px #FB2576;
+}
+
+ul li.active:hover>ul{
+  display: block;
+}
+
+ul li.active-1:hover ul{
+  display: block;
+}
+
+.smooth {
+  animation-duration: 1.6s;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0, -100%);
+    -webkit-transform: translate3d(0, -100%, 0, -100%);
+    -moz-transform: translate3d(0, -100%, 0, -100%);
+    -ms-transform: translate3d(0, -100%, 0, -100%);
+    -o-transform: translate3d(0, -100%, 0, -100%);
+}
+  to {
+    opacity: 1;
+    transform: none;
+}
+}
+
+.secondary-btn-anim {
+  box-shadow: 0 0 20px 0 #fb2577c0 inset, 0 0 20px 2px #fb2577df;
+  animation-name: wave;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes wave {
+  0% {
+    box-shadow: 0 0 20px 0 #fb2577c0 inset, 0 0 20px 2px #fb2577df;
+  }
+  100% {
+    box-shadow: 0 0 30px 0 #fb257794 inset, 0 0 30px 2px #fb257762;
+  }
+}
+
+
+
+
+
+

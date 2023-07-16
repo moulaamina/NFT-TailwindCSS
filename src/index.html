@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/public/output.css" rel="stylesheet">
+
+    <title>NFT tailwindCSS</title>
+</head>
+<body>
+    <header class="theme-box-shadow fixed w-full bg-black/80 z-10 py-2 lg:py-0">
+        <div class="container mx-auto flex items-center justify-between my-0">
+          <div class="flex items-center">
+            <h3 class="font-bold text-white text-2xl">LOGO</h3>
+          </div>
+
+          <div class='p-2 rounded-full cursor-pointer inline-block border-2 bg-[#FB2576] border-[#FB2576] hover:bg-[#FB2576] secondary-btn-effect lg:hidden'>
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" class='fill-white  w-5 h-5'>            
+            <path d="M448 64c0 17.7-14.3 32-32 32H192c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32zm0 256c0 17.7-14.3 32-32 32H192c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32zM0 192c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+          </div>
+
+          <nav class='lg:flex items-center space-x-4 hidden'>
+            <ul class="flex m-0">
+              <li class='relative hover:after-circle'>
+                <a href="#" class="flex items-center px-3 py-5 font-medium text-white">
+                  Home
+                </a>
+              </li>
+              <li class='relative active hover:after-circle'>
+                <a href="#" class="flex items-center px-3 py-5 font-medium text-white">
+                  Pages
+                  <span class='ml-2'> 
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" class='fill-white'>
+                    <path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
+                  </span>
+                </a>
+                <ul class='bg-white absolute w-44 top-full shadow-md shadow-black/30 hidden smooth text-black'> 
+                  <li class='px-4 py-2 font-medium hover:bg-[#571ce0] hover:text-white cursor-pointer'><a href="">Pages Op 1</a></li>
+                  <li class='px-4 py-2 font-medium hover:bg-[#571ce0] hover:text-white cursor-pointer'><a href="">Pages Op 2</a></li>
+                  <li class='px-4 py-2 font-medium hover:bg-[#571ce0] hover:text-white cursor-pointer'><a href="">Pages Op 3</a></li>
+                  <li class='px-4 py-2 font-medium hover:bg-[#571ce0] hover:text-white cursor-pointer'><a href="">Pages Op 4</a></li>
+                </ul>
+              </li>
+
+              <li class='relative hover:after-circle active'>
+                <a href="#" class="flex items-center px-3 py-5 font-medium text-white">
+                  Features
+                  <span class='ml-2'> 
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" class='fill-white'>
+                    <path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
+                  </span>
+                </a>
+                <ul class='bg-white absolute w-44 top-full shadow-md shadow-black/30 hidden smooth text-black'> 
+                  <li class='px-4 py-2 font-medium hover:bg-[#571ce0] hover:text-white cursor-pointer relative active-1'>
+                    <a href="" class='flex items-center'>Features Op 1
+                    <span class='ml-2'>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 256 512" class='fill-black hover:fill-white'>
+                    <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"/></svg>
+                    </span>
+                    </a>
+                    <ul class='bg-white absolute w-44 left-full shadow-black/30 -top-2 hidden text-black smooth'>
+                      <li class='px-4 py-2 font-medium hover:bg-[#571ce0] hover:text-white cursor-pointer'><a href="">Features Op 1-1</a></li>
+                      <li class='px-4 py-2 font-medium hover:bg-[#571ce0] hover:text-white cursor-pointer'><a href="">Features Op 1-2</a></li>
+                      <li class='px-4 py-2 font-medium hover:bg-[#571ce0] hover:text-white cursor-pointer'><a href="">Features Op 1-3</a></li>
+                    </ul>
+                  </li>
+                  <li class='px-4 py-2 font-medium hover:bg-[#571ce0] hover:text-white cursor-pointer'><a href="">Features Op 2</a></li>
+                  <li class='px-4 py-2 font-medium hover:bg-[#571ce0] hover:text-white cursor-pointer'><a href="">Features Op 3</a></li>
+                  <li class='px-4 py-2 font-medium hover:bg-[#571ce0] hover:text-white cursor-pointer'><a href="">Features Op 4</a></li>
+                  <li class='px-4 py-2 font-medium hover:bg-[#571ce0] hover:text-white cursor-pointer'><a href="">Features Op 5</a></li>
+                  <li class='px-4 py-2 font-medium hover:bg-[#571ce0] hover:text-white cursor-pointer'><a href="">Features Op 6</a></li>
+                </ul>
+              </li>
+              
+              <li class="block items-center relative hover:after-circle">
+                <a href="#" class="block items-center px-3 py-5 font-medium text-white">
+                  Blog
+                </a>
+              </li>
+
+              <li class='relative hover:after-circle active'>
+                <a href="#" class="flex items-center px-3 py-5 font-medium text-white">
+                  Team
+                  <span class='ml-2'> 
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" class='fill-white'>
+                    <path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
+                  </span>
+                </a>
+                <ul class='bg-white absolute w-44 top-full shadow-md shadow-black/30 hidden text-black smooth'> 
+                  <li class='px-4 py-2 font-medium hover:bg-[#571ce0] hover:text-white cursor-pointer'><a href="">Team Op 1</a></li>
+                  <li class='px-4 py-2 font-medium hover:bg-[#571ce0] hover:text-white cursor-pointer'><a href="">Team Op 2</a></li>
+                  <li class='px-4 py-2 font-medium hover:bg-[#571ce0] hover:text-white cursor-pointer'><a href="">Team Op 3</a></li>
+                  <li class='px-4 py-2 font-medium hover:bg-[#571ce0] hover:text-white cursor-pointer'><a href="">Team Op 4</a></li>
+                  <li class='px-4 py-2 font-medium hover:bg-[#571ce0] hover:text-white cursor-pointer'><a href="">Team Op 5</a></li>
+                  <li class='px-4 py-2 font-medium hover:bg-[#571ce0] hover:text-white cursor-pointer'><a href="">Team Op 6</a></li>
+                  <li class='px-4 py-2 font-medium hover:bg-[#571ce0] hover:text-white cursor-pointer'><a href="">Team Op 7</a></li>
+                  <li class='px-4 py-2 font-medium hover:bg-[#571ce0] hover:text-white cursor-pointer'><a href="">Team Op 8</a></li>
+                </ul>
+              </li>
+
+              <li class="block items-center relative hover:after-circle">
+                <a href="#" class="block items-center px-3 py-5 font-medium text-white">
+                  Contact
+                </a>
+              </li>
+            </ul>
+            <div class='flex items-center space-x-3'>
+              <span class='p-4 rounded-full bg-transparent cursor-pointer inline-block border-2 border-[#571ce0] hover:bg-[#571ce0] primary-btn-effect'>
+                <svg xmlns="http://www.w3.org/2000/svg" height="0.6em" viewBox="0 0 448 512" class='fill-white w-3 h-3' stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/>
+                <circle cx="12" cy="12" r="10" />
+                </svg>
+                </span>
+                <span>
+                  <a href="" class='text-white font-medium'>Login/Register</a>
+              </span>
+            </div>
+          </nav>
+
+        </div>
+      </header>
+
+      <section class='hero md:h-screen h-full relative container m-auto'>
+        <div class='py-28 relative md:absolute  md:top-1/2 md:-translate-y-1/2'>
+        <div class='grid md:grid-cols-2 gap-4 items-center'>
+          <div class='text-center md:text-start'>
+            <p class='text-lg sm:text-2xl text-[#FB2576] lg:text-4xl mb-9 font-medium'>Welcome Bonus upto $100</p>
+            <h1 class='text-2xl sm:text-4xl lg:text-6xl text-white mb-6 leading-tight font-bold'>Lorem ipsum dolor sit amet elit fugit iste</h1>
+            <p class='text-white text-xs sm:text-sm lg:text-md'>Lorem ipsum, dolor sit amet consectetur adipisicing. reprehenderit dolorem?</p>
+          
+            <div class='flex gap-4 items-center mt-20 justify-center md:justify-start flex-col sm:flex-row'>
+              <button class='text-white font-medium px-8 py-3 inline-block border-2 border-[#571ce0] hover:bg-[#571ce0] primary-btn-effect rounded-3xl cursor-pointer'>Get Start Now</button>
+              <button class='flex items-center text-white font-semibold'>
+                <span class='mr-3 p-4 rounded-full cursor-pointer inline-block border-2 bg-[#FB2576] border-[#FB2576] hover:bg-[#FB2576] secondary-btn-anim'>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" class='fill-white'>
+                <path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V192c0-35.3-28.7-64-64-64H80c-8.8 0-16-7.2-16-16s7.2-16 16-16H448c17.7 0 32-14.3 32-32s-14.3-32-32-32H64zM416 272a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>                </span>
+                Buy with ETH
+              </button>
+            </div>
+          </div>
+          <div>
+            <img src="/src/images/hero.png" alt="" />
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <section class='py-28 bg-gradient-to-b from-dark-purple to-dark-blue bg-[#571ce0]/40'>
+        <div class='container m-auto'>
+          <div class='text-center mb-16'>
+            <h2 class='text-2xl sm:text-4xl lg:text-5xl font-bold mb-3'>Lorem Ipsum Dolor</h2>
+            <p class='text-white text-xs sm:text-sm lg:text-md'>Lorem ipsum dolor sit consectetur adipisicing</p>
+          </div>
+
+          <div class='grid sm:grid-cols-2 md:grid-cols-4 gap-5'>
+            <div class='text-center py-12 rounded-3xl border-2 border-[#571ce0] transition ease-in delay-150 hover:bg-[#571ce0] hover:-translate-y-2'>
+              <figure class='bg-transparent md:w-24 md:h-24 lg:w-32 lg:h-32 w-32 h-32 flex items-center justify-center m-auto p-5 rounded-full border-2 border-[#571ce0] overflow-hidden'>
+                <img src="/src/images/img01.png" alt="" class='m-auto w-32'/>
+              </figure>
+              <h3 class='font-bold mt-6 lg:text-xl'>Lorem ipsum</h3>
+            </div>
+
+            <div class='text-center py-12 rounded-3xl border-2 border-[#571ce0] transition ease-in delay-150 hover:bg-[#571ce0] hover:-translate-y-2'>
+              <figure class='bg-transparent md:w-24 md:h-24 lg:w-32 lg:h-32 w-32 h-32 flex items-center justify-center m-auto p-5 rounded-full border-2 border-[#571ce0] overflow-hidden'>
+                <img src="/src/images/img02.png" alt="" class='m-auto w-32'/>
+              </figure>
+              <h3 class='font-bold mt-6 lg:text-xl'>Lorem ipsum</h3>
+            </div>
+
+            <div class='text-center py-12 rounded-3xl border-2 border-[#571ce0] transition ease-in delay-150 hover:bg-[#571ce0] hover:-translate-y-2'>
+              <figure class='bg-transparent md:w-24 md:h-24 lg:w-32 lg:h-32 w-32 h-32 flex items-center justify-center m-auto p-5 rounded-full border-2 border-[#571ce0] overflow-hidden'>
+                <img src="/src/images/img03.png" alt="" class='m-auto w-32'/>
+              </figure>
+              <h3 class='font-bold mt-6 lg:text-xl'>Lorem ipsum</h3>
+            </div>
+
+            <div class='text-center py-12 rounded-3xl border-2 border-[#571ce0] transition ease-in delay-150 hover:bg-[#571ce0] hover:-translate-y-2'>
+              <figure class='bg-transparent md:w-24 md:h-24 lg:w-32 lg:h-32 w-32 h-32 flex items-center justify-center m-auto p-5 rounded-full border-2 border-[#571ce0] overflow-hidden'>
+                <img src="/src/images/img04.png" alt="" class='m-auto'/>
+              </figure>
+              <h3 class='font-bold mt-6 lg:text-xl'>Lorem ipsum</h3>
+            </div>
+
+            <div class='text-center py-12 rounded-3xl border-2 border-[#571ce0] transition ease-in delay-150 hover:bg-[#571ce0] hover:-translate-y-2'>
+              <figure class='bg-transparent md:w-24 md:h-24 lg:w-32 lg:h-32 w-32 h-32 flex items-center justify-center m-auto p-5 rounded-full border-2 border-[#571ce0] overflow-hidden'>
+                <img src="/src/images/img05.png" alt="" class='m-auto'/>
+              </figure>
+              <h3 class='font-bold mt-6 lg:text-xl'>Lorem ipsum</h3>
+            </div>
+
+            <div class='text-center py-12 rounded-3xl border-2 border-[#571ce0] transition ease-in delay-150 hover:bg-[#571ce0] hover:-translate-y-2'>
+              <figure class='bg-transparent md:w-24 md:h-24 lg:w-32 lg:h-32 w-32 h-32 flex items-center justify-center m-auto p-5 rounded-full border-2 border-[#571ce0] overflow-hidden'>
+                <img src="/src/images/img03.png" alt="" class='m-auto'/>
+              </figure>
+              <h3 class='font-bold mt-6 lg:text-xl'>Lorem ipsum</h3>
+            </div>
+
+            <div class='text-center py-12 rounded-3xl border-2 border-[#571ce0] transition ease-in delay-150 hover:bg-[#571ce0] hover:-translate-y-2'>
+              <figure class='bg-transparent md:w-24 md:h-24 lg:w-32 lg:h-32 w-32 h-32 flex items-center justify-center m-auto p-5 rounded-full border-2 border-[#571ce0] overflow-hidden'>
+                <img src="/src/images/img02.png" alt="" class='m-auto'/>
+              </figure>
+              <h3 class='font-bold mt-6 lg:text-xl'>Lorem ipsum</h3>
+            </div>
+
+            <div class='text-center py-12 rounded-3xl border-2 border-[#571ce0] transition ease-in delay-150 hover:bg-[#571ce0] hover:-translate-y-2'>
+              <figure class='bg-transparent md:w-24 md:h-24 lg:w-32 lg:h-32 w-32 h-32 flex items-center justify-center m-auto p-5 rounded-full border-2 border-[#571ce0] overflow-hidden'>
+                <img src="/src/images/img01.png" alt="" class='m-auto'/>
+              </figure>
+              <h3 class='font-bold mt-6 lg:text-xl'>Lorem ipsum</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class='py-28 bg-gradient-to-b from-dark-purple to-dark-blue'>
+        <div class='container m-auto'>
+        <div class='text-center mb-12'>
+            <h2 class='text-2xl sm:text-4xl lg:text-5xl font-bold mb-3'>Lorem Ipsum Dolor adipisicing</h2>
+            <p class='text-white text-xs sm:text-sm lg:text-md'>Lorem ipsum dolor sit consectetur adipisicing</p>
+          </div>
+
+          <div class='mb-16 flex flex-col sm:flex-row justify-center items-center gap-4'>
+            <button class='flex items-center px-6 py-2 bg-[#571ce0] rounded-3xl ring-2 ring-[#571ce0]'>
+              <img src="/src/images/link.png" alt="" class='w-8'/>
+              <span class='ml-2'>Team</span>
+            </button>
+            <button class='flex items-center px-6 py-2 bg-black hover:bg-[#571ce0] rounded-3xl ring-2 ring-black hover:ring-[#571ce0]'>
+              <img src="/src/images/link.png" alt="" class='w-8'/>
+              <span class='ml-2'>Team</span>
+            </button>
+          </div>
+
+          <div class='mb-16 text-center'>
+            <h2 class='text-2xl sm:text-4xl lg:text-6xl font-bold mb-3'>Team</h2>
+          </div>
+
+          <div class="flex flex-col items-center justify-center gap-5">
+            <div class="flex flex-col md:flex-row justify-center w-full gap-5">
+              <div class='flex flex-col lg:flex-row text-center lg:text-start items-center gap-3 bg-black p-3 px-5 rounded-3xl ring-2 ring-white md:w-1/3'>
+                <div class='rounded-full p-2 w-20 h-20 flex items-center justify-center border-2 border-[#571ce0]'>
+                  <img src="/src/images/pic.png" alt="" class='' />
+                </div>
+                <div>
+                  <p class='text-xl font-semibold text-[#FB2576]'>John Doe</p>
+                </div>
+              </div>
+
+              <div class='flex flex-col lg:flex-row text-center lg:text-start items-center gap-3 bg-black p-3 px-5 rounded-3xl ring-2 ring-white md:w-1/3'>
+                <div class='rounded-full p-2 w-20 h-20 flex items-center justify-center border-2 border-[#571ce0]'>
+                  <img src="/src/images/pic.png" alt="" class='' />
+                </div>
+                <div>
+                  <p class='text-xl font-semibold text-[#FB2576]'>John Doe</p>
+                </div>
+              </div>
+
+              <div class='flex flex-col lg:flex-row text-center lg:text-start items-center gap-3 bg-black p-3 px-5 rounded-3xl ring-2 ring-white md:w-1/3'>
+                <div class='rounded-full p-2 w-20 h-20 flex items-center justify-center border-2 border-[#571ce0]'>
+                  <img src="/src/images/pic.png" alt="" class='' />
+                </div>
+                <div>
+                  <p class='text-xl font-semibold text-[#FB2576]'>John Doe</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-center gap-5 w-full">
+            <div class='flex flex-col lg:flex-row text-center lg:text-start items-center gap-3 bg-black p-3 px-5 rounded-3xl ring-2 ring-white md:w-1/3'>
+                <div class='rounded-full p-2 w-20 h-20 flex items-center justify-center border-2 border-[#571ce0]'>
+                  <img src="/src/images/pic.png" alt="" class='' />
+                </div>
+                <div>
+                  <p class='text-xl font-semibold text-[#FB2576]'>John Doe</p>
+                </div>
+              </div>
+
+              <div class='flex flex-col lg:flex-row text-center lg:text-start items-center gap-3 bg-black p-3 px-5 rounded-3xl ring-2 ring-white md:w-1/3'>
+                <div class='rounded-full p-2 w-20 h-20 flex items-center justify-center border-2 border-[#571ce0]'>
+                  <img src="/src/images/pic.png" alt="" class='' />
+                </div>
+                <div>
+                  <p class='text-xl font-semibold text-[#FB2576]'>John Doe</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class='bg-[#571ce0]/20 py-28'>
+        <div class='container m-auto'>
+          <div class='text-center mb-16'>
+            <h2 class='text-2xl sm:text-4xl lg:text-5xl font-bold mb-3'>Lorem Ipsum Dolor</h2>
+            <p class='text-white text-xs sm:text-sm lg:text-md'>Lorem ipsum dolor sit consectetur adipisicing</p>
+          </div>
+
+          <div class='grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-16'>
+            <div class='text-center py-20 rounded-3xl border-2 border-[#571ce0] transition ease-in delay-150 bg-transparent/10 hover:bg-transparent/30 hover:-translate-y-2'>
+              <figure class='w-40 h-40 p-3 flex items-center justify-center m-auto rounded-full bg-[#571ce0]/10 overflow-hidden'>
+                <img src="/src/images/img01.png" alt="" class='m-auto w-32'/>
+              </figure>
+              <h3 class='font-bold mt-6 text-2xl mb-5'>Lorem ipsum</h3>
+              <p class='mb-6 text-lg'>Lorem ipsum dolor</p>
+              <p class='mb-9 text-[#FB2576] text-2xl font-semibold tabular-nums'>$1234.56</p>
+              <button class='text-white font-medium px-9 py-3 inline-block border-2 border-[#571ce0] hover:bg-[#571ce0] primary-btn-effect rounded-3xl cursor-pointer'>Play Now</button>
+            </div>
+
+            <div class='text-center py-20 rounded-3xl border-2 border-[#571ce0] transition ease-in delay-150 bg-transparent/10 hover:bg-transparent/30 hover:-translate-y-2'>
+              <figure class='w-40 h-40 p-3 flex items-center justify-center m-auto rounded-full bg-[#571ce0]/10 overflow-hidden'>
+                <img src="/src/images/img01.png" alt="" class='m-auto w-32'/>
+              </figure>
+              <h3 class='font-bold mt-6 text-2xl mb-5'>Lorem ipsum</h3>
+              <p class='mb-6 text-lg'>Lorem ipsum dolor</p>
+              <p class='mb-9 text-[#FB2576] text-2xl font-semibold tabular-nums'>$1234.56</p>
+              <button class='text-white font-medium px-9 py-3 inline-block border-2 border-[#571ce0] hover:bg-[#571ce0] primary-btn-effect rounded-3xl cursor-pointer'>Play Now</button>
+            </div>
+
+            <div class='text-center py-20 rounded-3xl border-2 border-[#571ce0] transition ease-in delay-150 bg-transparent/10 hover:bg-transparent/30 hover:-translate-y-2'>
+              <figure class='w-40 h-40 p-3 flex items-center justify-center m-auto rounded-full bg-[#571ce0]/10 overflow-hidden'>
+                <img src="/src/images/img01.png" alt="" class='m-auto w-32'/>
+              </figure>
+              <h3 class='font-bold mt-6 text-2xl mb-5'>Lorem ipsum</h3>
+              <p class='mb-6 text-lg'>Lorem ipsum dolor</p>
+              <p class='mb-9 text-[#FB2576] text-2xl font-semibold tabular-nums'>$1234.56</p>
+              <button class='text-white font-medium px-9 py-3 inline-block border-2 border-[#571ce0] hover:bg-[#571ce0] primary-btn-effect rounded-3xl cursor-pointer'>Play Now</button>
+            </div>
+
+            <div class='text-center py-20 rounded-3xl border-2 border-[#571ce0] transition ease-in delay-150 bg-transparent/10 hover:bg-transparent/30 hover:-translate-y-2'>
+              <figure class='w-40 h-40 p-3 flex items-center justify-center m-auto rounded-full bg-[#571ce0]/10 overflow-hidden'>
+                <img src="/src/images/img01.png" alt="" class='m-auto w-32'/>
+              </figure>
+              <h3 class='font-bold mt-6 text-2xl mb-5'>Lorem ipsum</h3>
+              <p class='mb-6 text-lg'>Lorem ipsum dolor</p>
+              <p class='mb-9 text-[#FB2576] text-2xl font-semibold tabular-nums'>$1234.56</p>
+              <button class='text-white font-medium px-9 py-3 inline-block border-2 border-[#571ce0] hover:bg-[#571ce0] primary-btn-effect rounded-3xl cursor-pointer'>Play Now</button>
+            </div>
+        </div>
+
+        <div class='text-center'>
+          <button class='text-white font-medium px-10 py-3 inline-block border-2 border-[#571ce0] hover:bg-[#571ce0] primary-btn-effect rounded-3xl cursor-pointer'>Browse All</button>
+        </div>
+        </div>
+      </section>
+
+      <footer class='py-6 bg-black'>
+        <div class='container m-auto text-center'>
+          <p class='mb-2 text-sm'>© Copyright 2023 by <span class='text-[#FB2576] font-semibold'>AMINA MOULA</span>, All rights reserved.</p>
+          <p class='text-xs'>Cras eget mauris quam. Sed dignissim tempor ante, ac feugiat ex. hendrerit leo eu finibus.</p>
+        </div>
+      </footer>
+</body>
+</html>
