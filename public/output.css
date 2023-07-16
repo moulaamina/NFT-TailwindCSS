@@ -827,8 +827,8 @@ video {
   background-color: rgb(87 28 224 / 0.2);
 }
 
-.bg-\[\#571ce0\]\/60 {
-  background-color: rgb(87 28 224 / 0.6);
+.bg-\[\#571ce0\]\/40 {
+  background-color: rgb(87 28 224 / 0.4);
 }
 
 .bg-\[\#FB2576\] {
@@ -856,10 +856,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#571ce0\]\/40 {
-  background-color: rgb(87 28 224 / 0.4);
 }
 
 .bg-gradient-to-b {
