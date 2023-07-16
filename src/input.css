@@ -13,7 +13,7 @@
 body {
     font-family: "Nunito Sans", sans-serif;
     color: #ffffff;
-    background-image: url("/src/images/bg.png");
+    background-image: url("/public/images/bg.png");
 }
 
 .theme-box-shadow {
