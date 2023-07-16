@@ -14,7 +14,7 @@ body {
     font-family: "Nunito Sans", sans-serif;
     color: #ffffff;
     background-color: #000849;
-    background-image: url("/public/images/bg.png");
+    background-image: url("../public/images/bg.png");
 }
 
 .theme-box-shadow {
